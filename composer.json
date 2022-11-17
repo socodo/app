@@ -1,0 +1,21 @@
+{
+    "name": "socodo/app",
+    "description": "Socodo, the PHP framework",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Qroffle Inc.",
+            "email": "dev@qroffle.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "socodo/framework": "dev-main"
+    }
+}
