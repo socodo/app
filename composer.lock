@@ -61,6 +61,59 @@
             "time": "2022-07-19T17:36:59+00:00"
         },
         {
+            "name": "psr/http-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "22b2ef5687f43679481615605d7a15c557ce85b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/22b2ef5687f43679481615605d7a15c557ce85b1",
+                "reference": "22b2ef5687f43679481615605d7a15c557ce85b1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-client/tree/master"
+            },
+            "time": "2020-09-19T09:12:31+00:00"
+        },
+        {
             "name": "psr/http-message",
             "version": "dev-master",
             "source": {
@@ -115,23 +168,83 @@
             "time": "2019-08-29T13:16:46+00:00"
         },
         {
+            "name": "psr/http-server-handler",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-handler.git",
+                "reference": "cada5cd1c6a9871031e07f26d0f7b08c9de19039"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/cada5cd1c6a9871031e07f26d0f7b08c9de19039",
+                "reference": "cada5cd1c6a9871031e07f26d0f7b08c9de19039",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side request handler",
+            "keywords": [
+                "handler",
+                "http",
+                "http-interop",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response",
+                "server"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-server-handler/tree/master"
+            },
+            "time": "2020-09-17T16:52:43+00:00"
+        },
+        {
             "name": "socodo/framework",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/socodo/framework.git",
-                "reference": "78f1874eda387160b45abdfd310e618643efb8b6"
+                "reference": "5b906241c1a016be03fa8ff18e22b8f19a6a81bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/socodo/framework/zipball/78f1874eda387160b45abdfd310e618643efb8b6",
-                "reference": "78f1874eda387160b45abdfd310e618643efb8b6",
+                "url": "https://api.github.com/repos/socodo/framework/zipball/5b906241c1a016be03fa8ff18e22b8f19a6a81bb",
+                "reference": "5b906241c1a016be03fa8ff18e22b8f19a6a81bb",
                 "shasum": ""
             },
             "require": {
+                "ext-fileinfo": "*",
                 "php": "^8.1",
-                "socodo/http": "dev-main",
-                "socodo/injection": "dev-main"
+                "psr/http-server-handler": "1.0.x-dev",
+                "socodo/http": "^0.0.2",
+                "socodo/injection": "dev-main",
+                "socodo/router": "^0.0.4"
             },
             "default-branch": true,
             "type": "library",
@@ -155,27 +268,28 @@
                 "issues": "https://github.com/socodo/framework/issues",
                 "source": "https://github.com/socodo/framework/tree/main"
             },
-            "time": "2022-11-17T07:28:01+00:00"
+            "time": "2022-11-19T06:20:28+00:00"
         },
         {
             "name": "socodo/http",
-            "version": "dev-main",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/socodo/http.git",
-                "reference": "1b65c9ffb9b9a4cc294f2793ccd71e61bd91b1d3"
+                "reference": "f2c343e6c18a2bc9d8c021db5856ad8da87209a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/socodo/http/zipball/1b65c9ffb9b9a4cc294f2793ccd71e61bd91b1d3",
-                "reference": "1b65c9ffb9b9a4cc294f2793ccd71e61bd91b1d3",
+                "url": "https://api.github.com/repos/socodo/http/zipball/f2c343e6c18a2bc9d8c021db5856ad8da87209a9",
+                "reference": "f2c343e6c18a2bc9d8c021db5856ad8da87209a9",
                 "shasum": ""
             },
             "require": {
+                "ext-curl": "*",
                 "php": "^8.1",
+                "psr/http-client": "^1.0",
                 "psr/http-message": "^1.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -195,9 +309,9 @@
             "description": "HTTP component for socodo.",
             "support": {
                 "issues": "https://github.com/socodo/http/issues",
-                "source": "https://github.com/socodo/http/tree/main"
+                "source": "https://github.com/socodo/http/tree/0.0.2"
             },
-            "time": "2022-11-13T18:26:37+00:00"
+            "time": "2022-11-19T05:19:15+00:00"
         },
         {
             "name": "socodo/injection",
@@ -205,12 +319,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/socodo/injection.git",
-                "reference": "2f29b6b5ead69ac12821e1978b464b1b83d13b28"
+                "reference": "e6a75b19e8ecc0176d22d0ae0ea81272862bb713"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/socodo/injection/zipball/2f29b6b5ead69ac12821e1978b464b1b83d13b28",
-                "reference": "2f29b6b5ead69ac12821e1978b464b1b83d13b28",
+                "url": "https://api.github.com/repos/socodo/injection/zipball/e6a75b19e8ecc0176d22d0ae0ea81272862bb713",
+                "reference": "e6a75b19e8ecc0176d22d0ae0ea81272862bb713",
                 "shasum": ""
             },
             "require": {
@@ -244,7 +358,48 @@
                 "issues": "https://github.com/socodo/injection/issues",
                 "source": "https://github.com/socodo/injection/tree/main"
             },
-            "time": "2022-11-12T06:42:03+00:00"
+            "time": "2022-11-18T18:27:30+00:00"
+        },
+        {
+            "name": "socodo/router",
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/socodo/router.git",
+                "reference": "aff5b0d9c0315f3600e1ea5060844b5b56caf986"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/socodo/router/zipball/aff5b0d9c0315f3600e1ea5060844b5b56caf986",
+                "reference": "aff5b0d9c0315f3600e1ea5060844b5b56caf986",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "socodo/http": "^0.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Socodo\\Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Qroffle Inc.",
+                    "email": "socodo@qroffle.com"
+                }
+            ],
+            "description": "Router component for socodo.",
+            "support": {
+                "issues": "https://github.com/socodo/router/issues",
+                "source": "https://github.com/socodo/router/tree/0.0.4"
+            },
+            "time": "2022-11-19T06:10:40+00:00"
         }
     ],
     "packages-dev": [],
